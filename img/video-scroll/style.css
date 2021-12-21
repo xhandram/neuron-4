@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+}
+
+#v0 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+}
+
+.video-container {
+  z-index: 100;
+  height: 100vh;
+}
+
+section {
+  z-index: 1;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  color: white;
+  top: 33%;
+}
+
+#id0 {
+  z-index: -100;
+}
+
+.content h1 {
+  color: white;
+}
+
+#set-height {
+  display: block;
+}

@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,700");
+
+//Colors
+$dark-background: #040404;
+$light-background: #f7f7f7;
+$primary-color: #eb5f22;
+$secondary-color: #ff5911;
+$light-primary: #fed5c2;
+$text-dark: #000;
+$text-white: #edeeef;
+$text-dim: #b6b6b6;
+
+//Grid
+$gutter-vertical: 1rem;
+$gutter-horizontal: 4em;
+
+//FONTs
+$default-font-size: 12px;
+$small-text: 0.8rem;
+$font-family: "Poppins", sans-serif;
+
+//Bulma Overwrite
+$primary: $primary-color !important;
+.has-text-primary {
+    color: $primary-color !important;
+}

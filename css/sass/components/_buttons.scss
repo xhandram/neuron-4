@@ -1,0 +1,150 @@
+//This file you will create your style for buttons inside of the project
+.btn {
+  cursor: pointer;
+  padding: 14px 24px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  display: block;
+  color: $text-white;
+}
+.line-btn {
+  background: none;
+  text-transform: uppercase;
+  border: 2px $primary-color solid;
+  width: fit-content;
+  letter-spacing: 0.2rem;
+  color: $primary-color;
+  transition: all 0.5s;
+
+  &--white {
+    border: 2px white solid;
+    color: white;
+  }
+
+  &:hover {
+    color: white;
+    background-color: $primary-color;
+  }
+}
+
+.solid-btn {
+  background: $primary-color;
+  text-transform: uppercase;
+  border: 0;
+  width: fit-content;
+  letter-spacing: 0.2rem;
+  transition: all 0.8s ease-in;
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+
+.solid-btn:hover {
+  background: darken($primary-color, 25%);
+  color: white;
+}
+
+.text-btn {
+  border: 0;
+  background: none;
+  color: $primary-color;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+
+  &:hover {
+    color: lighten($primary-color, 25%) !important;
+  }
+}
+
+// OUTLINE BUTTON
+.dash-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 200px;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 5px;
+  position: relative;
+}
+.outline {
+  position: absolute;
+  top: 2px;
+  width: 100%;
+  height: 100%;
+  left: 2px;
+  border-radius: 5px;
+  stroke-dashoffset: 0;
+}
+
+.outline__line {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  fill: none;
+  stroke-width: 2;
+  transition: all 1s ease-in-out;
+}
+
+.outline__line:nth-child(2) {
+  transform: rotate(180deg);
+  transform-origin: center center;
+}
+
+.outline__line.orange {
+  stroke: $primary-color;
+}
+
+.dash-btn:hover .outline__line {
+  animation: line-animation 0.8s ease-in-out forwards;
+}
+
+.dash-btn:hover {
+  color: white;
+}
+
+@keyframes line-animation {
+  0% {
+    /*stroke-dashoffset: -99.9109;*/
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    /*stroke-dashoffset: -356.9109;*/
+    stroke-dashoffset: -258;
+  }
+}
+
+/*LINK CON EFECTO LINEA MOVIENDOSE*/
+
+.link {
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+}
+
+.link::before,
+.link::after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+
+.link::before {
+  content: "";
+  /* show by default */
+}
+
+.link--metis::before {
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s;
+}
+
+.link--metis:hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+}

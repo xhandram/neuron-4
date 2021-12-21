@@ -1,0 +1,64 @@
+//This file is for create your style with relation on space of navbar
+
+#navbar {
+  height: 100px;
+  position: fixed;
+  z-index: 9000;
+  width: 100%;
+
+  transition: all 0.5s;
+
+  &__content {
+    position: relative;
+    padding: 50px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+    z-index: 9000;
+    padding-right: 11rem;
+  }
+
+  &__phone-numbers {
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    font-size: 0.87rem;
+
+    a {
+      color: white;
+      text-decoration: none;
+      letter-spacing: 0;
+      transition: all 0.3s linear;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+    }
+    a:hover {
+      color: $primary-color;
+    }
+
+    img {
+      width: 16px;
+    }
+
+    & div {
+      padding: 0 18px;
+    }
+
+    & div:nth-of-type(2) {
+      border-left: 1px solid $primary-color;
+    }
+  }
+  &__action-btn {
+    padding-right: 5rem;
+  }
+  &__menu-icon {
+    width: 55px;
+    height: auto;
+    vertical-align: middle;
+    padding-left: 1rem;
+  }
+}

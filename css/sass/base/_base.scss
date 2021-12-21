@@ -1,0 +1,32 @@
+//This file you will create your base style inside of the project
+body {
+  font-size: $default-font-size;
+  color: $text-white;
+  overflow: hidden;
+}
+
+section * {
+  z-index: 100;
+  position: relative;
+}
+
+.glider {
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+}
+.redes-sociales {
+  img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  margin-top: 3rem;
+}
+
+//stop all transitions on load
+.preload {
+  transition: none !important;
+}

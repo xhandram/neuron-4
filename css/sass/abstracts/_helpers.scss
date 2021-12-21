@@ -1,0 +1,92 @@
+:root {
+  --h: 30px;
+}
+
+.destacar {
+  color: $primary-color !important;
+}
+
+.centrar {
+  margin: 0 auto;
+}
+
+// Bakcground colors
+
+.has-background-black {
+  background-color: $dark-background;
+}
+
+.decorative-line-1 {
+  font-size: 0.8rem;
+
+  &::after {
+    content: " ";
+    background-color: $primary-color;
+    width: 1px;
+    height: var(--h);
+    display: block;
+    margin-top: 0.5rem;
+    position: absolute;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+  }
+}
+
+.decorative-line-2 {
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  position: relative;
+  
+
+  &::after {
+    content: " ";
+    background-color: $primary-color;
+    width: 1px;
+    height: 50px;
+    display: block;
+    margin-top: 0.5rem;
+    position: absolute;
+  }
+}
+
+.decorative-line-3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  position: relative;
+  letter-spacing: 0.2em;
+  padding-left: 1rem;
+
+  &::before {
+    content: " ";
+    background-color: $primary-color;
+    width: 1px;
+    height: 50px;
+    display: inline-block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.has-text-secondary {
+  color: $light-primary;
+}
+
+.white-image {
+  filter: brightness(1000);
+}
+
+@keyframes growline {
+  from {
+    opacity: 0;
+    height: 0px;
+  }
+  to {
+    opacity: 1;
+    height: 60px;
+  }
+}
