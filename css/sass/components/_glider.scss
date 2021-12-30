@@ -8,11 +8,16 @@
     padding-right: 4rem;
     width: 50%;
     h3 {
-      color: $primary-color;
-      margin-bottom: 2rem;
+      color: $secondary-color;
+      margin-bottom: 4rem;
+      font-size: 2.5rem;
     }
     p {
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
+      font-size: 1.4rem;
+      font-weight: 300;
+      max-width: 40rem;
+      line-height: 2.4rem;
     }
   }
   &__robot {
@@ -48,11 +53,15 @@
 }
 /* Overwrite Glider */
 .glider-dot.active {
-  background: $primary-color;
+  background: $secondary-color;
 }
 .glider-dots {
   justify-content: flex-end;
   margin: 0;
+}
+.glider-dot {
+  width: 8px;
+  height: 8px;
 }
 
 .robot-info--wrapper{
@@ -68,4 +77,11 @@
 
 .robot-info.active{
   display:block;
+}
+.carousel-status {
+  font-size: 1.3rem;
+}
+#prev-slide, #next-slide {
+  padding:0;
+  margin-top: 2rem;
 }

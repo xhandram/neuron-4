@@ -3,7 +3,7 @@
   cursor: pointer;
   padding: 14px 24px;
   border-radius: 4px;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   display: block;
   color: $text-white;
 }
@@ -28,28 +28,29 @@
 }
 
 .solid-btn {
-  background: $primary-color;
+  background: $secondary-color;
   text-transform: uppercase;
   border: 0;
   width: fit-content;
   letter-spacing: 0.2rem;
   transition: all 0.8s ease-in;
-  -webkit-transition: background 0.3s ease-in;
+  -webkit-transition: background 0.4s ease-in;
   -moz-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
 }
 
 .solid-btn:hover {
-  background: darken($primary-color, 25%);
+  background-image: linear-gradient(to left, rgba(240,65,118,0.95),rgba(240,65,118,0));
   color: white;
 }
 
 .text-btn {
   border: 0;
+  display: block;
   background: none;
-  color: $primary-color;
-  font-size: 0.9rem;
+  color: $secondary-color;
+  font-size: 1.2rem;
   transition: color 0.3s;
 
   &:hover {

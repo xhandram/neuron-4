@@ -1,14 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700");
 
 //Colors
-$dark-background: #040404;
-$light-background: #f7f7f7;
-$primary-color: #eb5f22;
-$secondary-color: #ff5911;
-$light-primary: #fed5c2;
+$dark-background: #220A35;
+$light-background: #FEDAC6;
+$primary-color: #FF841E;
+$secondary-color: #0CBED5;
+$third-color: #F04176;
+
+$light-primary: #FEDAC6;
 $text-dark: #000;
 $text-white: #edeeef;
 $text-dim: #b6b6b6;
+$text-dim-brown: #5B4E47;
 
 //Grid
 $gutter-vertical: 1rem;

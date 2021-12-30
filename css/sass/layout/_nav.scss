@@ -7,10 +7,10 @@
   }
 
   &__button {
-    height: 2rem;
-    width: 2rem;
+    //height: 4.7rem;
+    //width: 2.7rem;
     position: fixed;
-    top: 2rem;
+    top: 3rem;
     right: 1.8rem;
     z-index: 9000;
     box-shadow: 1rem 1rem 4rem rgba($dark-background, 0.3);
@@ -20,11 +20,12 @@
       display: block;
       position: fixed;
       z-index: 9000;
-      top: 2.3rem;
-      right: 5rem;
+      top: 4.3rem;
+      right: 6rem;
       cursor: pointer;
       letter-spacing: 0.2rem;
-      font-weight: 300;
+      font-weight: 400;
+      font-size: 1.1rem;
     }
   }
 

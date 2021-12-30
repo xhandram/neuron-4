@@ -53,7 +53,7 @@ let carouselStatus = document.querySelector(".carousel-status");
 
 function updateStatus() {
   let slideNumber = glider.getCurrentSlide() + 1;
-  carouselStatus.textContent = slideNumber + "/" + glider.slides.length;
+  carouselStatus.textContent = slideNumber + " / " + glider.slides.length;
   //update robot info
   robots_info.forEach((robot) => {
     robot.classList.remove("active");

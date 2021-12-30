@@ -11,11 +11,11 @@
 <title>Neuronrehab</title>
 </head>
 
-<body class="has-background-black preload">
+<body class="preload">
 <!-- NAVBAR-->
     <div id="navbar">
         <div id="navbar__content">      
-            <img src="svg/logo.svg" alt="logo" class="logo">    
+            <img src="svg/logo.svg" alt="logo" class="logo white-image">    
                 <div id="navbar__phone-numbers">                 
                     <img src="svg/tlf_icono.svg" alt="mobile phone icon"> 
                     <div><a href="tel:+34915988463" class="has-text-weight-light">(+34) 91 598 8463 </a> </div>
@@ -28,7 +28,7 @@
                 <input type="checkbox" name="nav-toggle" id="nav-toggle" class="nav__checkbox">
                 <label for="nav-toggle">
                     <span class="nav__button--text is-uppercase">Menu</span>     
-                    <img src="SVG/neurona_menu.svg" alt="neurona" width="29px" class="nav__button">               
+                    <img src="img/menu-icon.png" alt="neurona" width="27px" class="nav__button">               
                 </label>
                 <div class="nav__background">&nbsp;</div>
                 
@@ -116,17 +116,21 @@
     
     <div class="video-container">
         <section id="hero-section" class="container">
-            <h1>Juntos hasta el <br> máximo potencial <br> de <span class="destacar">tu recuperación</span></h1>
+            <h1>Juntos hasta el <br> máximo potencial <br> de tu recuperación</h1>
             <p class="has-text-weight-light"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ad ducimus, explicabo veniam pariatur modi rem culpa et fuga asperiores deleniti in reprehenderit praesentium minima dicta magnam distinctio velit qui.</p>
             <p class="decorative-line-1 is-uppercase"> Scroll para explorar</p>
         </section>
 
         <!-- WELCOME SECTION-->  
         <section id="welcome-section" class="">
-        <video id="welcome-section__video" autoplay muted data-scroll>
-            <source src="img/videos/WebVideo.mp4"
-                    type="video/mp4">
-        </video>
+            <div id="welcome-section__video-container">
+                <video id="welcome-section__video" autoplay muted data-scroll>
+                    <source src="img/videos/WebVideo.mp4"
+                            type="video/mp4">
+                </video>
+                <div class="gradient-decoration"></div>
+            </div>
+        
         <div class="card-black">
             <h2>Bienvenidos a un nuevo concepto de rehabilitación</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, cupiditate nesciunt harum minima aut quas ad ipsum doloribus voluptas necessitatibus tempora nihil fugit dignissimos asperiores repellat illo aspernatur! Dolores, modi.</p>
@@ -137,16 +141,23 @@
                     
             </svg>Nuestro Método</a>
         </div>
+        
         </section>
+        <video id="v0" tabindex="0", autobuffer preload autoplay muted loop >
+            <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="img/videos/neurona.mp4" ></source>
+        </video>
+
+        
+</div>
         <!-- SERVICES SECTION-->  
         <section id="services-section" >
         <div class="container is-max-desktop">
-                <h2>Lorem ipsum <br/>dolor <span class="destacar">sit amet</span> <br/>consectetur</h2>
+                <h2>Lorem ipsum <br/>dolor sit amet<br/>consectetur</h2>
                 <!--Valoracion-->
                 <div class="service">
                     <div class="service__title">
                         <p class="decorative-line-2 is-uppercase"> 01</p>
-                        <h3 class="destacar" id="service__title01"> Valoración <br/>Inicial</h3>
+                        <h3 class="destacar" id="service__title01"> Valoración Inicial</h3>
                     </div>
                     <div class="service__desc" id="service__desc01">
                         <object data="svg/Icono_01.svg" class="service__icon"> </object>
@@ -157,7 +168,7 @@
                 <div class="service">
                     <div class="service__title">
                         <p class="decorative-line-2 is-uppercase"> 02</p>
-                        <h3 class="destacar" id="service__title02"> Terapia<br/>Intensiva</h3>
+                        <h3 class="destacar" id="service__title02"> Terapia Intensiva</h3>
                     </div>
                     <div class="service__desc" id="service__desc02">
                         <object data="svg/icono_02.svg" class="service__icon"> </object>
@@ -168,7 +179,7 @@
                 <div class="service">
                     <div class="service__title">
                         <p class="decorative-line-2 is-uppercase"> 03</p>
-                        <h3 class="destacar" id="service__title03"> Objetivos <br/>significativos</h3>
+                        <h3 class="destacar" id="service__title03"> Objetivos significativos</h3>
                     </div>
                     <div class="service__desc" id="service__desc03">
                         <object data="svg/icono_03.svg" class="service__icon"> </object>
@@ -179,7 +190,7 @@
                 <div class="service">
                     <div class="service__title">
                         <p class="decorative-line-2 is-uppercase"> 04</p>
-                        <h3 class="destacar" id="service__title04"> Análisis <br/>de Resultados</h3>
+                        <h3 class="destacar" id="service__title04"> Análisis de Resultados</h3>
                     </div>
                     <div class="service__desc" id="service__desc04">
                         <object data="svg/icono_04.svg" class="service__icon"> </object>
@@ -188,48 +199,66 @@
                 </div>
                 </div>
             </section>
-            <video id="v0" tabindex="0", autobuffer preload autoplay muted loop >
-                <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="img/videos/brain1.mp4" ></source>
-            </video>
+           
+    <!-- AREAS SECTION-->
+    <section id="areas-section"> 
+        <div class="container is-max-desktop">
+        <div class="columns">
+            <!-- Area -->
+            <div class="column area">
+                <img src="SVG/area-1.svg" alt="neurologia" class="area__img">
+                <h3 class="area__name">Neurología</h3>
+                <p class="area__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                <a href="#" class="btn text-btn area__btn">Leer más</a>
+            </div>
+            <!-- Area -->
+            <div class="column area">
+                <img src="SVG/area-2.svg" alt="logopedia" class="area__img">
+                <h3 class="area__name">Logopedia</h3>
+                <p class="area__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                <a href="#" class="btn text-btn area__btn">Leer más</a>
+            </div>
+            <!-- Area -->
+            <div class="column area">
+                <img src="SVG/area-3.svg" alt="trabajo social" class="area__img">
+                <h3 class="area__name">Trabajo Social</h3>
+                <p class="area__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                <a href="#" class="btn text-btn area__btn">Leer más</a>
+            </div>
+        </div>
+        <div class="columns">
+            <!-- Area -->
+            <div class="column area">
+                <img src="SVG/area-4.svg" alt="neuropsicologia" class="area__img">
+                <h3 class="area__name">Neuropsicología</h3>
+                <p class="area__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                <a href="#" class="btn text-btn area__btn">Leer más</a>
+            </div>
+            <!-- Area -->
+            <div class="column area">
+                <img src="SVG/area-5.svg" alt="terapia ocupacional" class="area__img">
+                <h3 class="area__name">Terapia Ocupacional</h3>
+                <p class="area__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                <a href="#" class="btn text-btn area__btn">Leer más</a>
+            </div>
+            <!-- Area -->
+            <div class="column area">
+                <img src="SVG/area-6.svg" alt="fisioterapia" class="area__img">
+                <h3 class="area__name">Fisioterapia</h3>
+                <p class="area__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                <a href="#" class="btn text-btn area__btn">Leer más</a>
+            </div>
+        </div>
     </div>
-    <!-- IMAGES SECTION-->
-    <section id="images-section">
-        <div id="lgv" class="image-flipcard">      
-                    <div class="white-overlay"></div>
-                <div class="image-content">
-                    <h3>Neurología</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Magni eos iusto quae beatae vitae aliquam incidunt nesciunt. </p>
-                    <button class="btn solid-btn ">Saber más</button>
-                </div>    
-        </div>
-        <div id="m1" class="image-flipcard"></div>
-        <div id="m2" class="image-flipcard"></div>
-        <div id="m3" class="image-flipcard">
-                    <div class="white-overlay"></div>
-                <div class="image-content">
-                    <h3>Neurología</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Magni eos iusto quae beatae vitae aliquam incidunt nesciunt. </p>
-                    <button class="btn solid-btn ">Saber más</button>
-                </div>   
-        </div>
-        <div id="lgh" class="image-flipcard">
-            <div class="white-overlay"></div>
-                <div class="image-content">
-                    <h3>Neurología</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Magni eos iusto quae beatae vitae aliquam incidunt nesciunt. </p>
-                    <button class="btn solid-btn ">Saber más</button>
-                </div>            
-        </div>
-        <div id="m4" class="image-flipcard"></div>    
     </section>
 
     <!-- ROBOTICA SECTION-->
-    <section id="robotica-section" class="has-background-black">
+    <section id="robotica-section">
         <div class="container is-max-desktop">
         <div class="glider">
             <div class="glider__slide">
                 <div class="glider__desc">
-                    <h2>La tecnología <br/>y la <span class="destacar">robótica</span> más avanzada <br/>para tu recuperación</h2>
+                    <h2>La tecnología <br/>y la robótica más <br/>avanzada en neurorrehabilitación</h2>
                     <div class="robot-info--wrapper">
                         <div class="robot-info" data-slide="1" style="">
                             <h3 id="robot-name">Omego Plus</h3>

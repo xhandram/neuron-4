@@ -35,10 +35,13 @@
   }
 }
 
-.decorative-line-2 {
-  font-size: 1.4rem;
+.decorative-line-2  {
+  font-size: 2.4rem;
   letter-spacing: 0.1em;
   position: relative;
+  font-weight: bold;
+  padding-top: 3px;
+  margin-right: 4rem;
   
 
   &::after {
@@ -54,10 +57,11 @@
 
 .decorative-line-3 {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.3rem;
   position: relative;
   letter-spacing: 0.2em;
   padding-left: 1rem;
+  color: $secondary-color;
 
   &::before {
     content: " ";
