@@ -11,3 +11,13 @@
   background-image: -ms-linear-gradient( 120deg, rgb(240,65,118) 0%, rgb(249,153,74) 52%, rgb(12,190,213) 100%);
 
 }
+
+.gradient-decoration-2{
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  background-image: -moz-linear-gradient( 120deg, rgb(240,65,118) 0%, rgb(249,153,74) 52%, rgb(12,190,213) 100%);
+background-image: -webkit-linear-gradient( 120deg, rgb(240,65,118) 0%, rgb(249,153,74) 52%, rgb(12,190,213) 100%);
+background-image: -ms-linear-gradient( 120deg, rgb(240,65,118) 0%, rgb(249,153,74) 52%, rgb(12,190,213) 100%);
+
+}

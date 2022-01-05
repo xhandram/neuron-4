@@ -79,7 +79,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  z-index: 100;
+  z-index: 300;
   position: relative;
   padding: 5rem;
   padding-bottom: 15rem;
@@ -163,7 +163,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 15rem;
+  padding-bottom: 35rem;
   position: relative;
   z-index: 100;
   background-color: $dark-background;
@@ -178,14 +178,7 @@
 //STORIES SECTION
 #stories-section {
   color: black;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.3)
-    ),
-    url("../img/mountain-background.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: $light-background;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -198,21 +191,71 @@
 
   #feature-story {
     display: flex;
-    justify-content: center;
 
     &__img {
-      width: 50%;
-      margin-top: -8rem;
+      margin-top: -13rem;
       color: white;
     }
+    &__img-container  {
+      position: relative;
+    }
+
+   .gradient-decoration-2 {
+      width: 298px;
+      height: 365px;
+      top: 113px;
+      left: -6px;
+    }
+
     &__desc {
-      width: 50%;
-      padding-top: 5rem;
+      max-width: 40rem;
+      padding-top: 6rem;
+      padding-left: 3rem;
+      padding-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h3 {
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 3.2rem;  
+        padding-bottom: 6rem;      
+      }
+      p {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        padding-bottom: 2rem;
+      }
+      a {
+        font-size: 1.3rem;
+        letter-spacing: 0.3em;
+        font-weight: 600;
+
+      }
     }
   }
 
   #stories {
-    margin-top: 8rem;
+    margin-top: 14rem;
+
+
+
+    .title {
+      max-width:30rem;
+    }
+  }
+
+  .story {
+    padding: 3rem;
+
+    a {
+      font-size: 1.3rem;
+      letter-spacing: 0.3em;
+      font-weight: 600;
+      padding-top: 5rem;
+      display: block;
+    }
   }
 }
 

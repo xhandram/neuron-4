@@ -6,8 +6,19 @@
   color: $primary-color !important;
 }
 
+.has-text-dark-2 {
+  color: $dark-background !important;
+}
+.has-text-third {
+  color: $third-color !important;
+}
+
 .centrar {
   margin: 0 auto;
+}
+
+.pl-2r {
+  padding-left: 2rem;
 }
 
 // Bakcground colors
@@ -57,17 +68,17 @@
 
 .decorative-line-3 {
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   position: relative;
   letter-spacing: 0.2em;
-  padding-left: 1rem;
+  padding-left: 2rem;
   color: $secondary-color;
 
   &::before {
     content: " ";
     background-color: $primary-color;
-    width: 1px;
-    height: 50px;
+    width: 2px;
+    height: 105px;
     display: inline-block;
 
     position: absolute;
