@@ -238,8 +238,7 @@
 
   #stories {
     margin: 14rem 0;
-
-
+    position: relative;
 
     .title {
       max-width:30rem;
@@ -266,15 +265,20 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 5rem;
-  padding-top: 8rem;
+  padding-bottom: 16rem;
+  padding-top: 21rem;
   position: relative;
   z-index: 100;
+  background-color: $dark-background;
+  background-image: url("../../../img/maya.png");
+  background-repeat: no-repeat;
+  background-position-y: 55%;
+  background-position-x: -11%;
 
   .contact {
     width: 100%;
     h2 {
-      margin-bottom: 5rem;
+      margin-bottom: 8rem;
     }
   }
 
@@ -282,19 +286,29 @@
     display: flex;
     flex-direction: column;
 
-    border-top: 2px solid gray;
+    &:last-of-type{
+      border-bottom: 1px solid $light-purple;
+    }
+
+    .plus-sign {
+      margin-top: 15px;
+    }
+
+    border-top: 1px solid $light-purple;
     cursor: pointer;
+    
     &__titulo {
       display: flex;
       padding-top: 0.8rem;
       justify-content: space-between;
       h3 {
-        font-size: 0.9rem;
-        padding-bottom: 1rem;
+        font-size: 1.6rem;
+        padding: 1.5rem 0;
         text-transform: uppercase;
-        letter-spacing: 0.1rem;
-      }
+        letter-spacing: 0.3rem;
+      }      
     }
+    
     &__direccion {
       max-width: 95%;
       max-height: 0;
@@ -308,10 +322,16 @@
 
     &.active .contact__centro__direccion {
       max-height: 350px;
+      padding-bottom: 2rem;
     }
+    .contact__centro__direccion p {
+      padding-bottom: 1rem !important;
+  }
 
     &.active h3 {
       color: $primary-color !important;
+      font-weight: bold;
+      padding-bottom: 3rem;
     }
 
     svg path {
@@ -332,11 +352,28 @@
   }
   .contact__info,
   .contact__text {
-    max-width: 40%;
-    margin-right: 3%;
+    padding: 0 7rem;   
+
+    p {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      padding: 0 7rem 4rem 0;
+    }
+    
   }
+
   #form-subsection {
-    margin-top: 5rem;
+    margin-top: 21rem;
+  }
+
+  #contact__map {
+    &__name {
+      padding-bottom: 4rem;
+    }
+
+    &__img {
+      max-width: inherit;
+    }
   }
 }
 /* COLABORADORES SECTION */
@@ -344,7 +381,9 @@
 #section-colaboradores {
   z-index: 100;
   position: relative;
-  padding: 8rem 1rem;
+  background-color: $light-background;
+  color: $dark-background;
+  padding: 11rem 1rem;
   .level img {
     filter: grayscale(1);
   }

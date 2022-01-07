@@ -84,6 +84,17 @@
   }
 }
 
+.malla {
+    background-image: url("../../../img/maya.png");
+    position: absolute;
+    top: 0;
+    left: -25%;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 500px;
+    height: 500px;
+}
+
 .has-text-secondary {
   color: $light-primary;
 }

@@ -1,11 +1,17 @@
 .label {
   color: $text-white;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1.6rem;
 }
 input {
   border: 0;
   background-color: transparent;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid $light-purple;
   min-width: 350px;
+}
+.field {
+  margin-bottom: 2.3rem !important;
+}
+.field:last-of-type {
+  margin-bottom: 8rem !important;
 }

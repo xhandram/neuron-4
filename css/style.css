@@ -3,6 +3,9 @@
 .has-text-primary {
   color: #FF841E !important; }
 
+.has-text-primary {
+  color: #FF841E !important; }
+
 .has-text-dark {
   color: #220A35 !important; }
 
@@ -11,6 +14,9 @@
 
 .has-text-terceary {
   color: #F04176 !important; }
+
+.pl-5 {
+  padding-left: 2rem !important; }
 
 :root {
   --h: 30px; }
@@ -78,6 +84,16 @@
     position: absolute;
     top: 0;
     left: 0; }
+
+.malla {
+  background-image: url("../../../img/maya.png");
+  position: absolute;
+  top: 0;
+  left: -25%;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 500px;
+  height: 500px; }
 
 .has-text-secondary {
   color: #FEDAC6; }
@@ -161,6 +177,12 @@ a:hover {
 
 .is-size-7 {
   font-size: 1.1rem !important; }
+
+.is-size-4 {
+  font-size: 1.4rem !important; }
+
+.has-text-wide {
+  letter-spacing: .4rem; }
 
 .row {
   max-width: 1150px;
@@ -475,13 +497,17 @@ a:hover {
   background-image: -webkit-linear-gradient(120deg, #f04176 0%, #f9994a 52%, #0cbed5 100%);
   background-image: -ms-linear-gradient(120deg, #f04176 0%, #f9994a 52%, #0cbed5 100%); }
 
-.gradient-decoration-2 {
-  position: absolute;
-  background-color: white;
-  z-index: 1;
-  background-image: -moz-linear-gradient(120deg, #f04176 0%, #f9994a 52%, #0cbed5 100%);
-  background-image: -webkit-linear-gradient(120deg, #f04176 0%, #f9994a 52%, #0cbed5 100%);
-  background-image: -ms-linear-gradient(120deg, #f04176 0%, #f9994a 52%, #0cbed5 100%); }
+.gradient-decoration-story {
+  top: 115px;
+  left: -1px;
+  height: 360px;
+  width: 71%; }
+
+.gradient-decoration-map {
+  width: 100%;
+  height: 77%;
+  top: 138px;
+  left: 1px; }
 
 .btn {
   cursor: pointer;
@@ -528,6 +554,7 @@ a:hover {
   background: none;
   color: #0CBED5;
   font-size: 1.2rem;
+  letter-spacing: .3rem;
   transition: color 0.3s; }
   .text-btn:hover {
     color: #ffca9e !important; }
@@ -535,9 +562,9 @@ a:hover {
 .dash-btn {
   text-decoration: none;
   text-transform: uppercase;
-  width: 200px;
+  width: 245px;
   text-align: center;
-  padding: 1.5rem;
+  padding: 2.2rem;
   border-radius: 5px;
   position: relative;
   font-weight: 500;
@@ -564,7 +591,7 @@ a:hover {
   transform-origin: center center; }
 
 .outline__line.orange {
-  stroke: #FF841E; }
+  stroke: #eb6022; }
 
 .dash-btn:hover .outline__line {
   animation: line-animation 0.8s ease-in-out forwards; }
@@ -578,7 +605,7 @@ a:hover {
     stroke-dashoffset: 0; }
   100% {
     /*stroke-dashoffset: -356.9109;*/
-    stroke-dashoffset: -258; } }
+    stroke-dashoffset: -298; } }
 
 /*LINK CON EFECTO LINEA MOVIENDOSE*/
 .link {
@@ -704,13 +731,19 @@ a:hover {
 .label {
   color: #edeeef;
   font-weight: 300;
-  font-size: 1.2em; }
+  font-size: 1.6rem; }
 
 input {
   border: 0;
   background-color: transparent;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #7E579D;
   min-width: 350px; }
+
+.field {
+  margin-bottom: 2.3rem !important; }
+
+.field:last-of-type {
+  margin-bottom: 8rem !important; }
 
 #hero-section {
   min-height: 100vh;
@@ -884,7 +917,8 @@ input {
         letter-spacing: 0.3em;
         font-weight: 600; }
   #stories-section #stories {
-    margin: 14rem 0; }
+    margin: 14rem 0;
+    position: relative; }
     #stories-section #stories .title {
       max-width: 30rem; }
   #stories-section .story {
@@ -901,28 +935,37 @@ input {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 5rem;
-  padding-top: 8rem;
+  padding-bottom: 16rem;
+  padding-top: 21rem;
   position: relative;
-  z-index: 100; }
+  z-index: 100;
+  background-color: #220A35;
+  background-image: url("../../../img/maya.png");
+  background-repeat: no-repeat;
+  background-position-y: 55%;
+  background-position-x: -11%; }
   #contact-section .contact {
     width: 100%; }
     #contact-section .contact h2 {
-      margin-bottom: 5rem; }
+      margin-bottom: 8rem; }
   #contact-section .contact__centro {
     display: flex;
     flex-direction: column;
-    border-top: 2px solid gray;
+    border-top: 1px solid #7E579D;
     cursor: pointer; }
+    #contact-section .contact__centro:last-of-type {
+      border-bottom: 1px solid #7E579D; }
+    #contact-section .contact__centro .plus-sign {
+      margin-top: 15px; }
     #contact-section .contact__centro__titulo {
       display: flex;
       padding-top: 0.8rem;
       justify-content: space-between; }
       #contact-section .contact__centro__titulo h3 {
-        font-size: 0.9rem;
-        padding-bottom: 1rem;
+        font-size: 1.6rem;
+        padding: 1.5rem 0;
         text-transform: uppercase;
-        letter-spacing: 0.1rem; }
+        letter-spacing: 0.3rem; }
     #contact-section .contact__centro__direccion {
       max-width: 95%;
       max-height: 0;
@@ -933,9 +976,14 @@ input {
       -ms-transition: max-height 1s ease;
       -o-transition: max-height 1s ease; }
     #contact-section .contact__centro.active .contact__centro__direccion {
-      max-height: 350px; }
+      max-height: 350px;
+      padding-bottom: 2rem; }
+    #contact-section .contact__centro .contact__centro__direccion p {
+      padding-bottom: 1rem !important; }
     #contact-section .contact__centro.active h3 {
-      color: #FF841E !important; }
+      color: #FF841E !important;
+      font-weight: bold;
+      padding-bottom: 3rem; }
     #contact-section .contact__centro svg path {
       transition: all 0.5s ease;
       -webkit-transition: all 0.5s ease;
@@ -948,16 +996,26 @@ input {
       fill: grey; }
   #contact-section .contact__info,
   #contact-section .contact__text {
-    max-width: 40%;
-    margin-right: 3%; }
+    padding: 0 7rem; }
+    #contact-section .contact__info p,
+    #contact-section .contact__text p {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      padding: 0 7rem 4rem 0; }
   #contact-section #form-subsection {
-    margin-top: 5rem; }
+    margin-top: 21rem; }
+  #contact-section #contact__map__name {
+    padding-bottom: 4rem; }
+  #contact-section #contact__map__img {
+    max-width: inherit; }
 
 /* COLABORADORES SECTION */
 #section-colaboradores {
   z-index: 100;
   position: relative;
-  padding: 8rem 1rem; }
+  background-color: #FEDAC6;
+  color: #220A35;
+  padding: 11rem 1rem; }
   #section-colaboradores .level img {
     filter: grayscale(1); }
 
