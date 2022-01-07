@@ -27,3 +27,14 @@ $primary: $primary-color !important;
 .has-text-primary {
     color: $primary-color !important;
 }
+
+.has-text-dark {
+    color: $dark-background !important;
+}
+
+.has-text-secondary {
+    color: $secondary-color !important;
+}
+.has-text-terceary {
+    color: $third-color !important;
+}

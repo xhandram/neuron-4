@@ -3,6 +3,15 @@
 .has-text-primary {
   color: #FF841E !important; }
 
+.has-text-dark {
+  color: #220A35 !important; }
+
+.has-text-secondary {
+  color: #0CBED5 !important; }
+
+.has-text-terceary {
+  color: #F04176 !important; }
+
 :root {
   --h: 30px; }
 
@@ -11,9 +20,6 @@
 
 .has-text-dark-2 {
   color: #220A35 !important; }
-
-.has-text-third {
-  color: #F04176 !important; }
 
 .centrar {
   margin: 0 auto; }
@@ -481,7 +487,7 @@ a:hover {
   cursor: pointer;
   padding: 14px 24px;
   border-radius: 4px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   display: block;
   color: #edeeef; }
 
@@ -533,7 +539,9 @@ a:hover {
   text-align: center;
   padding: 1.5rem;
   border-radius: 5px;
-  position: relative; }
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.3rem; }
 
 .outline {
   position: absolute;
@@ -876,7 +884,7 @@ input {
         letter-spacing: 0.3em;
         font-weight: 600; }
   #stories-section #stories {
-    margin-top: 14rem; }
+    margin: 14rem 0; }
     #stories-section #stories .title {
       max-width: 30rem; }
   #stories-section .story {

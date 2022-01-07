@@ -3,7 +3,7 @@
   cursor: pointer;
   padding: 14px 24px;
   border-radius: 4px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   display: block;
   color: $text-white;
 }
@@ -67,6 +67,8 @@
   padding: 1.5rem;
   border-radius: 5px;
   position: relative;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
 }
 .outline {
   position: absolute;
