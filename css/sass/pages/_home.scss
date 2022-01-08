@@ -383,10 +383,8 @@
   position: relative;
   background-color: $light-background;
   color: $dark-background;
-  padding: 11rem 1rem;
-  .level img {
-    //filter: grayscale(1);
-  }
+  padding: 11rem 14rem;
+ 
   &__imgs {
     padding-top: 13rem;
   }
@@ -400,7 +398,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 9rem 1rem;
+  padding: 8rem 1rem;
   padding-bottom: 12rem;
   background-color: $dark-background;
 
@@ -410,13 +408,24 @@
     margin: 0;
 
     &__img {
-      width: 50%;
       color: white;
+      padding-right: 4rem;
     }
     &__desc {
-      width: 50%;
+      max-width: 40rem;
       padding-top: 5rem;
+      padding-bottom: 20rem;
       font-size: 0.8rem;
+
+      h3 {
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin-top: 4rem;
+        padding-bottom: 4rem;
+      }
+      p {
+        margin-bottom: 4rem;
+      }
     }
   }
 }
@@ -429,15 +438,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 8rem;
+  padding-bottom: 11rem;
+
 }
 #posts-wrapper {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-bottom: 5rem;
   img {
-    margin-top: -6rem;
+    margin-top: -18rem;
   }
+}
+
+.post{
+  :not(:last-child) {
+    margin-right: 5rem;
+  }
+  p {
+    padding-top: 3rem;
+  }
+  margin-bottom: 11rem;
+}
+
+#blog-btn{
+  padding: 12rem auto;
 }
 
 //MOVE TO VENDORS sass
