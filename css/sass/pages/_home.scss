@@ -385,7 +385,10 @@
   color: $dark-background;
   padding: 11rem 1rem;
   .level img {
-    filter: grayscale(1);
+    //filter: grayscale(1);
+  }
+  &__imgs {
+    padding-top: 13rem;
   }
 }
 
@@ -397,9 +400,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5rem 1rem;
+  padding: 9rem 1rem;
   padding-bottom: 12rem;
-  background-color: black;
+  background-color: $dark-background;
 
   #feature-post {
     display: flex;

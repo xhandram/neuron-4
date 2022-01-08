@@ -506,6 +506,12 @@ a:hover {
   top: 138px;
   left: 1px; }
 
+.gradient-decoration-blog {
+  top: 115px;
+  left: -1px;
+  height: 360px;
+  width: 71%; }
+
 .btn {
   cursor: pointer;
   padding: 14px 24px;
@@ -1013,8 +1019,8 @@ input {
   background-color: #FEDAC6;
   color: #220A35;
   padding: 11rem 1rem; }
-  #section-colaboradores .level img {
-    filter: grayscale(1); }
+  #section-colaboradores__imgs {
+    padding-top: 13rem; }
 
 /* BLOG FEATURES POST SECTION */
 #blog-feature-section {
@@ -1024,9 +1030,9 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5rem 1rem;
+  padding: 9rem 1rem;
   padding-bottom: 12rem;
-  background-color: black; }
+  background-color: #220A35; }
   #blog-feature-section #feature-post {
     display: flex;
     justify-content: center;
