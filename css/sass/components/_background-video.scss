@@ -1,8 +1,9 @@
 .video-container {
   background: url("../../../img/bg-deg.png") top;
   background-size: cover;
+  position: relative;
 
-   #v0 {
+  #v0 {
     position: fixed;
     top: 0px;
     right: 0;
@@ -11,7 +12,5 @@
     object-fit: cover;
     opacity: 1;
     z-index: 0;
-    
   }
 }
-

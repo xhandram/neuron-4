@@ -39,7 +39,6 @@
     margin-top: -5rem;
     position: relative;
     z-index: 2;
-    
 
     & video {
       width: 100%;
@@ -47,12 +46,27 @@
   }
 
   &__video::after {
-    content:"";
+    content: "";
     width: 100%;
     height: 100%;
-    background-image: -moz-linear-gradient( 120deg, rgb(240,65,118) 0%, rgb(249,153,74) 52%, rgb(12,190,213) 100%);
-    background-image: -webkit-linear-gradient( 120deg, rgb(240,65,118) 0%, rgb(249,153,74) 52%, rgb(12,190,213) 100%);
-    background-image: -ms-linear-gradient( 120deg, rgb(240,65,118) 0%, rgb(249,153,74) 52%, rgb(12,190,213) 100%);
+    background-image: -moz-linear-gradient(
+      120deg,
+      rgb(240, 65, 118) 0%,
+      rgb(249, 153, 74) 52%,
+      rgb(12, 190, 213) 100%
+    );
+    background-image: -webkit-linear-gradient(
+      120deg,
+      rgb(240, 65, 118) 0%,
+      rgb(249, 153, 74) 52%,
+      rgb(12, 190, 213) 100%
+    );
+    background-image: -ms-linear-gradient(
+      120deg,
+      rgb(240, 65, 118) 0%,
+      rgb(249, 153, 74) 52%,
+      rgb(12, 190, 213) 100%
+    );
     position: absolute;
     left: -5px;
     top: -3px;
@@ -68,7 +82,7 @@
     }
 
     h2 {
-      font-size: 36px;
+      font-size: 3.6rem;
       font-weight: bold;
     }
   }
@@ -90,8 +104,6 @@
     margin-bottom: 15rem;
   }
 
- 
-
   h3 {
     padding-bottom: 4rem;
     font-size: 2.8rem;
@@ -105,7 +117,7 @@
   }
 
   .service__desc {
-    p{
+    p {
       font-size: 1.4rem;
       line-height: 2.4rem;
     }
@@ -152,7 +164,7 @@
       text-transform: uppercase;
       font-weight: 600;
       font-size: 1.3rem;
-      letter-spacing: .5rem;
+      letter-spacing: 0.5rem;
     }
   }
 }
@@ -167,7 +179,6 @@
   position: relative;
   z-index: 100;
   background-color: $dark-background;
-  
 
   h2 {
     margin-bottom: 15rem;
@@ -196,11 +207,11 @@
       margin-top: -13rem;
       color: white;
     }
-    &__img-container  {
+    &__img-container {
       position: relative;
     }
 
-   .gradient-decoration-2 {
+    .gradient-decoration-2 {
       width: 298px;
       height: 365px;
       top: 113px;
@@ -219,8 +230,8 @@
       h3 {
         font-size: 2.4rem;
         font-weight: bold;
-        line-height: 3.2rem;  
-        padding-bottom: 6rem;      
+        line-height: 3.2rem;
+        padding-bottom: 6rem;
       }
       p {
         font-size: 1.4rem;
@@ -231,7 +242,6 @@
         font-size: 1.3rem;
         letter-spacing: 0.3em;
         font-weight: 600;
-
       }
     }
   }
@@ -241,7 +251,7 @@
     position: relative;
 
     .title {
-      max-width:30rem;
+      max-width: 30rem;
     }
   }
 
@@ -286,7 +296,7 @@
     display: flex;
     flex-direction: column;
 
-    &:last-of-type{
+    &:last-of-type {
       border-bottom: 1px solid $light-purple;
     }
 
@@ -296,7 +306,7 @@
 
     border-top: 1px solid $light-purple;
     cursor: pointer;
-    
+
     &__titulo {
       display: flex;
       padding-top: 0.8rem;
@@ -306,9 +316,9 @@
         padding: 1.5rem 0;
         text-transform: uppercase;
         letter-spacing: 0.3rem;
-      }      
+      }
     }
-    
+
     &__direccion {
       max-width: 95%;
       max-height: 0;
@@ -326,7 +336,7 @@
     }
     .contact__centro__direccion p {
       padding-bottom: 1rem !important;
-  }
+    }
 
     &.active h3 {
       color: $primary-color !important;
@@ -352,14 +362,13 @@
   }
   .contact__info,
   .contact__text {
-    padding: 0 7rem;   
+    padding: 0 7rem;
 
     p {
       font-size: 1.4rem;
       line-height: 2.4rem;
       padding: 0 7rem 4rem 0;
     }
-    
   }
 
   #form-subsection {
@@ -384,7 +393,7 @@
   background-color: $light-background;
   color: $dark-background;
   padding: 11rem 14rem;
- 
+
   &__imgs {
     padding-top: 13rem;
   }
@@ -439,7 +448,6 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 11rem;
-
 }
 #posts-wrapper {
   padding-left: 2rem;
@@ -450,7 +458,7 @@
   }
 }
 
-.post{
+.post {
   :not(:last-child) {
     margin-right: 5rem;
   }
@@ -460,7 +468,7 @@
   margin-bottom: 11rem;
 }
 
-#blog-btn{
+#blog-btn {
   padding: 12rem auto;
 }
 

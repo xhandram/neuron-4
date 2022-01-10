@@ -1,35 +1,63 @@
-.gradient-decoration{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 25px;
-    left: 20px;
-    background-color: white;
-    z-index: 1;
-    background-image: -moz-linear-gradient( 120deg, rgb(240,65,118) 0%, rgb(249,153,74) 52%, rgb(12,190,213) 100%);
-    background-image: -webkit-linear-gradient( 120deg, rgb(240,65,118) 0%, rgb(249,153,74) 52%, rgb(12,190,213) 100%);
-    background-image: -ms-linear-gradient( 120deg, rgb(240,65,118) 0%, rgb(249,153,74) 52%, rgb(12,190,213) 100%);
-
+.gradient-decoration {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 25px;
+  left: 20px;
+  background-color: white;
+  z-index: 1;
+  background-image: -moz-linear-gradient(
+    120deg,
+    rgb(240, 65, 118) 0%,
+    rgb(249, 153, 74) 52%,
+    rgb(12, 190, 213) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    120deg,
+    rgb(240, 65, 118) 0%,
+    rgb(249, 153, 74) 52%,
+    rgb(12, 190, 213) 100%
+  );
+  background-image: -ms-linear-gradient(
+    120deg,
+    rgb(240, 65, 118) 0%,
+    rgb(249, 153, 74) 52%,
+    rgb(12, 190, 213) 100%
+  );
 }
-.gradient-decoration-story{
+.gradient-decoration-story {
   top: 115px;
   left: -1px;
   height: 360px;
   width: 71%;
-
 }
 
 .gradient-decoration-map {
   width: 100%;
   height: 77%;
   top: 138px;
-  left: 1px;  
+  left: 1px;
 }
 
-.gradient-decoration-blog{
+.gradient-decoration-blog {
   top: 98px;
   left: -1px;
   height: 212px;
   width: 76%;
 }
 
+.gradient-container {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  background: linear-gradient(
+    0deg,
+    rgb(37, 6, 53) 0%,
+    rgb(59 16 69 / 92%) 30%,
+    rgba(0, 212, 255, 0) 100%
+  );
+}

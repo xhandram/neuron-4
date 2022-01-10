@@ -466,7 +466,8 @@ a:hover {
 
 .video-container {
   background: url("../../../img/bg-deg.png") top;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   .video-container #v0 {
     position: fixed;
     top: 0px;
@@ -513,6 +514,16 @@ a:hover {
   left: -1px;
   height: 212px;
   width: 76%; }
+
+.gradient-container {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  background: linear-gradient(0deg, #250635 0%, rgba(59, 16, 69, 0.71222) 27%, rgba(0, 212, 255, 0) 100%); }
 
 .btn {
   cursor: pointer;
