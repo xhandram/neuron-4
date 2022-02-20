@@ -1,0 +1,35 @@
+.ihero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15rem; 
+    
+    &-body {
+        margin: 0 auto;
+        padding-top: 15rem;
+        padding-left: 5rem;
+
+        h1 {
+            font-weight: bold;
+            font-size: 3.5rem;
+            padding-bottom: 4rem;
+        }
+        p {
+            padding-bottom: 5.5rem;
+            padding-right: 3rem;
+        }
+    }
+    
+
+}
+
+.ifocus1 {
+    padding: 15rem 0;
+    display: flex;
+
+    img {
+        padding-right: 7rem;
+    }
+}
+

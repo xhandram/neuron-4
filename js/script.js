@@ -200,7 +200,7 @@ gsap.to(line1, {
 });
 
 gsap.to(line2, {
-  duration: 0.5, 
+  duration: 1, 
   scrollTrigger: {
     trigger: ".decorative-line-2",
     toggleActions: "play complete reverse reset"

@@ -18,9 +18,7 @@
 
   p {
     max-width: 450px;
-    font-size: 1.4rem;
     font-weight: 300;
-    line-height: 2.4rem;
   }
 }
 //WELCOME SECTION
@@ -116,12 +114,7 @@
     margin: 0 2rem;
   }
 
-  .service__desc {
-    p {
-      font-size: 1.4rem;
-      line-height: 2.4rem;
-    }
-  }
+
 }
 // AREAS SECTION
 #areas-section {
@@ -155,7 +148,6 @@
       font-weight: bold;
     }
     &__desc {
-      font-size: 1.4rem;
       font-weight: 300;
       max-width: 30rem;
       text-align: center;
@@ -234,8 +226,6 @@
         padding-bottom: 6rem;
       }
       p {
-        font-size: 1.4rem;
-        line-height: 2.4rem;
         padding-bottom: 2rem;
       }
       a {
@@ -365,8 +355,6 @@
     padding: 0 7rem;
 
     p {
-      font-size: 1.4rem;
-      line-height: 2.4rem;
       padding: 0 7rem 4rem 0;
     }
   }
